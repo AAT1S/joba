@@ -3,944 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Ораз Жандосов — Қоғамдық-саяси мұрасы</title>
-
+    <meta name="theme-color" content="#0b1b2e">
+    <title>Ораз Жандосов — Ғылыми-зерттеу жобасы</title>
+    <!-- Қаріптер style.css ішінде @import арқылы қосылады -->
     <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- =====================================================
-     BACKGROUND
-===================================================== -->
+    <div class="top-ornament-band"></div>
 
-<div class="noise"></div>
+    <header class="site-header is-home">
+        <div class="container">
 
-<div class="background-glow glow-1"></div>
-<div class="background-glow glow-2"></div>
-
-
-<!-- =====================================================
-     HEADER
-===================================================== -->
-
-<header class="header">
-
-    <div class="header-inner">
-
-        <a href="index.html" class="logo">
-
-            <span class="logo-mark">
-                ОЖ
-            </span>
-
-            <span class="logo-text">
-                ОРАЗ<br>
-                ЖАНДОСОВ
-            </span>
-
-        </a>
-
-
-        <nav class="navigation">
-
-            <a href="index.html" class="active">
-                <span>00</span>
-                Кіріспе
-            </a>
-
-            <a href="biography.html">
-                <span>01</span>
-                Өмірбаян
-            </a>
-
-            <a href="mindmap.html">
-                <span>02</span>
-                Алашпен байланыс
-            </a>
-
-            <a href="research.html">
-                <span>03</span>
-                ЖИ зерттеу
-            </a>
-
-        </nav>
-
-
-        <div class="language">
-
-            <span class="language-active">KZ</span>
-            <span>RU</span>
-            <span>EN</span>
-
-        </div>
-
-    </div>
-
-</header>
-
-
-
-<!-- =====================================================
-     HERO
-===================================================== -->
-
-<main>
-
-<section class="hero">
-
-    <div class="hero-left">
-
-        <div class="eyebrow">
-
-            <span class="line"></span>
-
-            ҒЫЛЫМИ-ЗЕРТТЕУ ЖОБАСЫ · 2026
-
-        </div>
-
-
-        <h1>
-
-            Ораз
-            <em>Жандосов</em>
-
-        </h1>
-
-
-        <div class="hero-description">
-
-            <div class="vertical-line"></div>
-
-            <p>
-                Қоғамдық-саяси мұрасын зерттеу,
-                жүйелеу және жасанды интеллект
-                негізінде визуализациялау.
-            </p>
-
-        </div>
-
-
-        <div class="hero-buttons">
-
-            <a href="biography.html" class="primary-button">
-
-                Зерттеуді бастау
-
-                <span>↗</span>
-
-            </a>
-
-
-            <a href="#project" class="secondary-button">
-
-                Жоба туралы
-
-                <span>↓</span>
-
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <!-- HISTORICAL VISUAL -->
-
-    <div class="hero-visual">
-
-        <div class="visual-frame">
-
-            <div class="frame-top">
-                ARCHIVE / 1920—1930
+            <!-- Тіл таңдау -->
+            <div class="language-bench">
+                <span class="lang-btn active">ҚАЗ</span>
+                <span class="lang-btn">РУС</span>
+                <span class="lang-btn">ENG</span>
+                <span class="lang-btn">中文</span>
             </div>
 
-
-            <div class="portrait">
-
-                <div class="portrait-overlay"></div>
-
-                <div class="portrait-placeholder">
-
-                    <span>О</span>
-
+            <!-- Hero -->
+            <div class="header-content">
+                <div class="header-text">
+                    <div class="academic-badge">Ғылыми жоба, 2026</div>
+                    <h1>Ораз Жандосовтың қоғамдық-саяси мұрасы</h1>
+                    <p class="subtitle">Жасанды интеллект негізінде жүйелеу және визуализациялау</p>
                 </div>
 
-                <div class="portrait-label">
-
-                    <strong>
-                        ОРАЗ ҚИҚЫМҰЛЫ
-                    </strong>
-
-                    <small>
-                        ЖАНДОСОВ
-                    </small>
-
+                <!-- Құпиялылық грифі алынған мұрағат құжаты (безендіру) -->
+                <div class="archive-sheet" aria-hidden="true">
+                    <div class="sheet-top">ҚР Президенті мұрағаты</div>
+                    <div class="stamp-wrap">
+                        <span class="stamp">ҚҰПИЯ</span>
+                        <i class="stamp-strike"></i>
+                    </div>
+                    <p class="stamp-note">«Құпия» белгісі алынды</p>
+                    <ul class="sheet-lines">
+                        <li style="--d:1.6s"><span>Ораз Қиқымұлы Жандосов</span></li>
+                        <li style="--d:1.8s"><span>Қоғамдық-саяси мұра</span></li>
+                        <li style="--d:2s"><span>Мұрағат құжаттары</span></li>
+                        <li style="--d:2.2s"><span>Жүйелеу және визуализациялау</span></li>
+                    </ul>
                 </div>
-
             </div>
 
+            <!-- Навигация -->
+            <nav class="main-nav" aria-label="Негізгі мәзір">
+                <ul>
+                    <li><a href="index.html" class="active" aria-current="page">Кіріспе</a></li>
+                    <li><a href="biography.html">І. Өмірбаян мен Хронология</a></li>
+                    <li><a href="mindmap.html">ІІ. Алашпен байланыс</a></li>
+                    <li><a href="research.html">ІІІ. Тәжірибелік бөлім (ЖИ)</a></li>
+                </ul>
+            </nav>
 
-            <div class="frame-bottom">
+        </div>
+    </header>
 
-                <span>
-                    ҚАЗАҚСТАН ТАРИХЫ
-                </span>
+    <main class="container main-content is-home-main">
 
-                <span>
-                    № 01
-                </span>
-
+        <!-- Өзектілік пен мақсат -->
+        <section class="split intro" aria-labelledby="intro-title">
+            <div class="split-head">
+                <h2 id="intro-title">Жобаның өзектілігі мен мақсаты</h2>
+                <div class="ornament-divider" aria-hidden="true">
+                    <span class="line"></span><span class="divider-dot">◆</span><span class="line"></span>
+                </div>
             </div>
 
-        </div>
+            <div class="intro-body">
+                <p class="lead">Ораз Қиқымұлы Жандосов туралы тарихи деректі, көркем фильмнің жоқтығы, ғаламтордағы бейнематериалдардағы қаралымның аздығы және тұлғаның тарихи маңызының заманауи құралдармен визуализацияланбауы осы жобаға негіз болды.</p>
 
+                <p>Біз ҚР Президенті мұрағатынан алынған <strong>«Құпия» белгісі енді ғана алынған тың деректерге</strong> сүйене отырып, тұлға мұрасын жасанды интеллект көмегімен жүйелеудің алғашқы үлгісін жасадық.</p>
 
-        <div class="visual-circle circle-a"></div>
-        <div class="visual-circle circle-b"></div>
+                <aside class="clipping" aria-labelledby="press-title">
+                    <h3 id="press-title">БАҚ-та жариялануы</h3>
+                    <p>Жоба нәтижелері кеңінен жарық көрді:</p>
+                    <ul>
+                        <li>«Егемен Қазақстан» газеті</li>
+                        <li>«Астана Ақшамы» газеті</li>
+                        <li>Астана қаласы әкимиятінің ресми сайттары</li>
+                        <li>Әлеуметтік желілер</li>
+                    </ul>
+                    <blockquote>
+                        «Алаш рухы — жаңа ұрпақпен жаңғырып келеді»
+                        <cite>мақаласы</cite>
+                    </blockquote>
+                </aside>
+            </div>
+        </section>
 
-        <div class="year">
-
-            <span>19</span>
-            <strong>30</strong>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     INTRO STRIP
-===================================================== -->
-
-<section class="intro-strip">
-
-    <div class="intro-number">
-        01
-    </div>
-
-    <div class="intro-title">
-        ТАРИХИ ТҰЛҒА
-    </div>
-
-    <div class="intro-text">
-        Қазақстанның қоғамдық-саяси тарихындағы
-        маңызды тұлғалардың бірі.
-    </div>
-
-    <div class="intro-arrow">
-        ↓
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     PROJECT
-===================================================== -->
-
-<section class="project-section" id="project">
-
-    <div class="section-heading">
-
-        <div class="section-index">
-            01 / PROJECT
-        </div>
-
-        <h2>
-            Жоба
-            <span>туралы</span>
-        </h2>
-
-    </div>
-
-
-    <div class="project-layout">
-
-        <div class="project-main">
-
-            <p class="large-text">
-
-                Бұл ғылыми-зерттеу жобасы
-                <strong>Ораз Қиқымұлы Жандосовтың</strong>
-                өмірі мен қоғамдық-саяси қызметін
-                жаңа цифрлық құралдар арқылы
-                зерттеуге арналған.
-
-            </p>
-
-
-            <div class="gold-line"></div>
-
-
-            <p class="normal-text">
-
-                Зерттеу барысында архивтік материалдар,
-                тарихи деректер және заманауи ақпараттық
-                технологиялар біріктіріледі. Жобаның негізгі
-                ерекшелігі — тарихи тұлға туралы ақпаратты
-                жасанды интеллект көмегімен жүйелеп,
-                визуалды түрде ұсыну.
-
-            </p>
-
-        </div>
-
-
-        <aside class="project-aside">
-
-            <div class="aside-label">
-                ЖОБА ДЕРЕКТЕРІ
+        <!-- Жоба паспорты -->
+        <section class="split passport" aria-labelledby="passport-title">
+            <div class="split-head">
+                <h2 id="passport-title">Жоба паспорты</h2>
+                <div class="ornament-divider" aria-hidden="true">
+                    <span class="line"></span><span class="divider-dot">◆</span><span class="line"></span>
+                </div>
             </div>
 
+            <dl class="credits">
+                <div>
+                    <dt>Жоба авторлары</dt>
+                    <dd>
+                        <span>Сенғазы Жансері Қасымханұлы</span>
+                        <span>Ертай Естай Нұржанұлы</span>
+                        <small>10 сынып</small>
+                    </dd>
+                </div>
+                <div>
+                    <dt>Мектеп</dt>
+                    <dd><span>«№73 мектеп-лицей» ШЖҚ МКК, Астана қаласы</span></dd>
+                </div>
+                <div>
+                    <dt>Жоба жетекшісі</dt>
+                    <dd>
+                        <span>Жомартқызы Гаури Ботакановна</span>
+                        <small>педагог-зерттеуші</small>
+                    </dd>
+                </div>
+                <div>
+                    <dt>Ғылыми жетекші</dt>
+                    <dd>
+                        <span>Дүкенбаева Задаш Оразғалықызы</span>
+                        <small>т.ғ.д., профессор, Л.Н. Гумилев атындағы ЕҰУ</small>
+                    </dd>
+                </div>
+                <div>
+                    <dt>Бағыты</dt>
+                    <dd><span>Тарих</span></dd>
+                </div>
+            </dl>
+        </section>
 
-            <div class="data-row">
-
-                <span>Жыл</span>
-                <strong>2026</strong>
-
+        <!-- Жоба бөлімдері -->
+        <section class="split parts" aria-labelledby="parts-title">
+            <div class="split-head">
+                <h2 id="parts-title">Жоба бөлімдері</h2>
+                <div class="ornament-divider" aria-hidden="true">
+                    <span class="line"></span><span class="divider-dot">◆</span><span class="line"></span>
+                </div>
             </div>
 
+            <ol class="parts-list">
+                <li>
+                    <a href="biography.html">
+                        <span class="num">І</span>
+                        <span class="part-title">Өмірбаян мен Хронология</span>
+                        <span class="part-desc">Өмір жолы мен негізгі оқиғалар</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mindmap.html">
+                        <span class="num">ІІ</span>
+                        <span class="part-title">Алашпен байланыс</span>
+                        <span class="part-desc">Тұлға мен Алаш арасындағы байланыс картасы</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="research.html">
+                        <span class="num">ІІІ</span>
+                        <span class="part-title">Тәжірибелік бөлім (ЖИ)</span>
+                        <span class="part-desc">Жасанды интеллектпен жүйелеу және визуализациялау</span>
+                    </a>
+                </li>
+            </ol>
+        </section>
 
-            <div class="data-row">
+    </main>
 
-                <span>Бағыты</span>
-                <strong>Тарих</strong>
-
-            </div>
-
-
-            <div class="data-row">
-
-                <span>Формат</span>
-                <strong>Digital Research</strong>
-
-            </div>
-
-
-            <div class="data-row">
-
-                <span>Технология</span>
-                <strong>AI</strong>
-
-            </div>
-
-        </aside>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     AUTHORS
-===================================================== -->
-
-<section class="authors-section">
-
-    <div class="authors-header">
-
-        <span>
-            ЗЕРТТЕУШІЛЕР
-        </span>
-
-        <div></div>
-
-        <span>
-            ASTANA · 2026
-        </span>
-
-    </div>
-
-
-    <div class="authors-grid">
-
-
-        <div class="author-card author-main">
-
-            <span class="author-number">
-                01
-            </span>
-
-            <div class="author-role">
-                ЖОБА АВТОРЫ
-            </div>
-
-            <h3>
-                Сенғазы Жансері
-                Қасымханұлы
-            </h3>
-
-            <p>
-                10 сынып оқушысы
-            </p>
-
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Ғылыми-зерттеу жобасы. «№73 мектеп-лицей», Астана қаласы.</p>
         </div>
-
-
-        <div class="author-card">
-
-            <span class="author-number">
-                02
-            </span>
-
-            <div class="author-role">
-                ЖОБА АВТОРЫ
-            </div>
-
-            <h3>
-                Ертай Естай
-                Нұржанұлы
-            </h3>
-
-            <p>
-                10 сынып оқушысы
-            </p>
-
-        </div>
-
-
-        <div class="author-card">
-
-            <span class="author-number">
-                03
-            </span>
-
-            <div class="author-role">
-                ЖОБА ЖЕТЕКШІСІ
-            </div>
-
-            <h3>
-                Жомартқызы
-                Гаури Ботакановна
-            </h3>
-
-            <p>
-                «педагог-зерттеуші»
-            </p>
-
-        </div>
-
-
-        <div class="author-card">
-
-            <span class="author-number">
-                04
-            </span>
-
-            <div class="author-role">
-                ҒЫЛЫМИ ЖЕТЕКШІ
-            </div>
-
-            <h3>
-                Дүкенбаева Задаш
-                Оразғалықызы
-            </h3>
-
-            <p>
-                т.ғ.д., профессор,
-                Л.Н. Гумилев атындағы ЕҰУ
-            </p>
-
-        </div>
-
-
-    </div>
-
-
-    <div class="school">
-
-        <span class="school-symbol">
-            73
-        </span>
-
-        <div>
-
-            <strong>
-                «№73 мектеп-лицей» ШЖҚ МКК
-            </strong>
-
-            <span>
-                Астана қаласы
-            </span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     RELEVANCE
-===================================================== -->
-
-<section class="relevance-section">
-
-    <div class="section-heading">
-
-        <div class="section-index">
-            02 / RESEARCH
-        </div>
-
-        <h2>
-            Неліктен
-            <span>бұл жоба?</span>
-        </h2>
-
-    </div>
-
-
-    <div class="relevance-grid">
-
-        <div class="relevance-number">
-            02
-        </div>
-
-
-        <div class="relevance-content">
-
-            <h3>
-                Тарихи мұраны
-                жаңа форматта көрсету
-            </h3>
-
-
-            <p>
-                Ораз Қиқымұлы Жандосов туралы тарихи
-                деректі және көркем фильмнің болмауы,
-                интернеттегі бейнематериалдардың
-                қаралымының аздығы және тұлғаның
-                тарихи маңызын заманауи құралдармен
-                визуализациялаудың жеткіліксіздігі
-                осы зерттеудің өзектілігін айқындайды.
-            </p>
-
-
-            <p>
-                Жобада ҚР Президенті мұрағатынан алынған
-                <strong>«Құпия» белгісі енді ғана алынған
-                тың деректерге</strong> сүйене отырып,
-                тарихи материалдарды жүйелеу тәсілі
-                ұсынылады.
-            </p>
-
-        </div>
-
-
-        <div class="relevance-quote">
-
-            <span>“</span>
-
-            <p>
-                Тарихи деректі сақтау —
-                оны келесі ұрпаққа
-                түсінікті тілде жеткізу.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     FOUR DIRECTIONS
-===================================================== -->
-
-<section class="directions-section">
-
-    <div class="directions-heading">
-
-        <span>
-            ЗЕРТТЕУ ҚҰРЫЛЫМЫ
-        </span>
-
-        <h2>
-            Жобаның
-            <em>төрт бағыты</em>
-        </h2>
-
-    </div>
-
-
-    <div class="directions">
-
-
-        <a href="biography.html" class="direction">
-
-            <div class="direction-top">
-
-                <span>
-                    01
-                </span>
-
-                <span class="direction-arrow">
-                    ↗
-                </span>
-
-            </div>
-
-            <h3>
-                Өмірбаян
-            </h3>
-
-            <p>
-                Тұлғаның өмір жолы,
-                негізгі тарихи кезеңдері
-                және қызметі.
-            </p>
-
-            <div class="direction-line"></div>
-
-        </a>
-
-
-        <a href="mindmap.html" class="direction">
-
-            <div class="direction-top">
-
-                <span>
-                    02
-                </span>
-
-                <span class="direction-arrow">
-                    ↗
-                </span>
-
-            </div>
-
-            <h3>
-                Алашпен байланыс
-            </h3>
-
-            <p>
-                Ораз Жандосовтың
-                қоғамдық-саяси ортамен
-                байланыстары.
-            </p>
-
-            <div class="direction-line"></div>
-
-        </a>
-
-
-        <a href="research.html" class="direction">
-
-            <div class="direction-top">
-
-                <span>
-                    03
-                </span>
-
-                <span class="direction-arrow">
-                    ↗
-                </span>
-
-            </div>
-
-            <h3>
-                ЖИ зерттеу
-            </h3>
-
-            <p>
-                Жасанды интеллект
-                көмегімен тарихи деректерді
-                жүйелеу.
-            </p>
-
-            <div class="direction-line"></div>
-
-        </a>
-
-
-        <div class="direction direction-disabled">
-
-            <div class="direction-top">
-
-                <span>
-                    04
-                </span>
-
-                <span>
-                    ARCHIVE
-                </span>
-
-            </div>
-
-            <h3>
-                Деректер қоры
-            </h3>
-
-            <p>
-                Архивтік материалдар,
-                жарияланымдар және
-                зерттеу нәтижелері.
-            </p>
-
-            <div class="direction-line"></div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     MEDIA / PUBLICATIONS
-===================================================== -->
-
-<section class="media-section">
-
-    <div class="media-top">
-
-        <div class="section-index">
-            03 / MEDIA
-        </div>
-
-        <h2>
-            Жобаның
-            <span>ақпарат кеңістігіндегі</span>
-            көрінісі
-        </h2>
-
-    </div>
-
-
-    <div class="media-grid">
-
-
-        <div class="media-item">
-
-            <span class="media-number">
-                01
-            </span>
-
-            <div>
-
-                <small>
-                    БАСПАСӨЗ
-                </small>
-
-                <h3>
-                    «Егемен Қазақстан»
-                </h3>
-
-                <p>
-                    Жоба нәтижелері республикалық
-                    басылым беттерінде жарияланды.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="media-item">
-
-            <span class="media-number">
-                02
-            </span>
-
-            <div>
-
-                <small>
-                    БАСПАСӨЗ
-                </small>
-
-                <h3>
-                    «Астана Ақшамы»
-                </h3>
-
-                <p>
-                    Зерттеу туралы ақпарат қалалық
-                    басылымда жарық көрді.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="media-item">
-
-            <span class="media-number">
-                03
-            </span>
-
-            <div>
-
-                <small>
-                    DIGITAL
-                </small>
-
-                <h3>
-                    Әлеуметтік желілер
-                </h3>
-
-                <p>
-                    «Алаш рухы — жаңа ұрпақпен
-                    жаңғырып келеді» мақаласы.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="media-item">
-
-            <span class="media-number">
-                04
-            </span>
-
-            <div>
-
-                <small>
-                    OFFICIAL
-                </small>
-
-                <h3>
-                    Астана әкімдігі
-                </h3>
-
-                <p>
-                    Жоба нәтижелері ресми ақпараттық
-                    ресурстарда жарияланды.
-                </p>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     FINAL CTA
-===================================================== -->
-
-<section class="final-section">
-
-    <div class="final-background">
-        ОРАЗ
-    </div>
-
-
-    <div class="final-content">
-
-        <span>
-            КЕЛЕСІ БӨЛІМ
-        </span>
-
-        <h2>
-            Тұлғаның
-            <em>тарихи жолын</em>
-            зерттеңіз
-        </h2>
-
-
-        <a href="biography.html" class="final-button">
-
-            Өмірбаянға өту
-
-            <span>
-                →
-            </span>
-
-        </a>
-
-    </div>
-
-</section>
-
-</main>
-
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer class="footer">
-
-    <div class="footer-main">
-
-        <div class="footer-brand">
-
-            <div class="footer-logo">
-                ОЖ
-            </div>
-
-            <div>
-
-                <strong>
-                    ОРАЗ ЖАНДОСОВ
-                </strong>
-
-                <span>
-                    Қоғамдық-саяси мұрасы
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <div class="footer-info">
-
-            <span>
-                Ғылыми-зерттеу жобасы
-            </span>
-
-            <span>
-                №73 мектеп-лицей
-            </span>
-
-            <span>
-                Астана · 2026
-            </span>
-
-        </div>
-
-    </div>
-
-
-    <div class="footer-bottom">
-
-        <span>
-            © 2026 Oraz Zhandosov Research Project
-        </span>
-
-        <span>
-            HISTORY × AI
-        </span>
-
-    </div>
-
-</footer>
-
+    </footer>
 
 </body>
 </html>
