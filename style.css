@@ -202,6 +202,10 @@ a {
     transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
 
+.lang-btn[hidden] {
+    display: none;
+}
+
 .lang-btn:hover {
     color: #fff;
     border-color: rgba(217, 172, 74, 0.7);
