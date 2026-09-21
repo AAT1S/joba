@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0b1b2e">
-    <title>Ораз Жандосов — Ғылыми-зерттеу жобасы</title>
+    <title data-i18n="meta.title">Ораз Жандосов — Ғылыми-зерттеу жобасы</title>
     <!-- Қаріптер style.css ішінде @import арқылы қосылады -->
     <link rel="stylesheet" href="style.css">
+    <script src="lang.js" defer></script>
 </head>
 <body>
 
@@ -16,44 +17,44 @@
         <div class="container">
 
             <!-- Тіл таңдау -->
-            <div class="language-bench">
-                <span class="lang-btn active">ҚАЗ</span>
-                <span class="lang-btn">РУС</span>
-                <span class="lang-btn">ENG</span>
-                <span class="lang-btn">中文</span>
+            <div class="language-bench" role="group" aria-label="Тіл / Язык / Language">
+                <button type="button" class="lang-btn active" data-lang="kk" aria-pressed="true">ҚАЗ</button>
+                <button type="button" class="lang-btn" data-lang="ru" aria-pressed="false">РУС</button>
+                <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">ENG</button>
             </div>
 
             <!-- Hero -->
             <div class="header-content">
                 <div class="header-text">
-                    <div class="academic-badge">Ғылыми жоба, 2026</div>
-                    <h1>Ораз Жандосовтың қоғамдық-саяси мұрасы</h1>
+                    <div class="academic-badge" data-i18n="badge">Ғылыми жоба, 2026</div>
+                    <h1 data-i18n="hero.title">Ораз Жандосовтың қоғамдық-саяси мұрасы</h1>
+                    <p class="subtitle" data-i18n="hero.subtitle">Жасанды интеллект негізінде жүйелеу және визуализациялау</p>
                 </div>
 
                 <!-- Құпиялылық грифі алынған мұрағат құжаты (безендіру) -->
                 <div class="archive-sheet" aria-hidden="true">
-                    <div class="sheet-top">ҚР Президенті мұрағаты</div>
+                    <div class="sheet-top" data-i18n="sheet.top">ҚР Президенті мұрағаты</div>
                     <div class="stamp-wrap">
-                        <span class="stamp">ҚҰПИЯ</span>
+                        <span class="stamp" data-i18n="stamp">ҚҰПИЯ</span>
                         <i class="stamp-strike"></i>
                     </div>
-                    <p class="stamp-note">«Құпия» белгісі алынды</p>
+                    <p class="stamp-note" data-i18n="stamp.note">«Құпия» белгісі алынды</p>
                     <ul class="sheet-lines">
-                        <li style="--d:1.6s"><span>Ораз Қиқымұлы Жандосов</span></li>
-                        <li style="--d:1.8s"><span>Қоғамдық-саяси мұра</span></li>
-                        <li style="--d:2s"><span>Мұрағат құжаттары</span></li>
-                        <li style="--d:2.2s"><span>Жүйелеу және визуализациялау</span></li>
+                        <li style="--d:1.6s"><span data-i18n="sheet.l1">Ораз Қиқымұлы Жандосов</span></li>
+                        <li style="--d:1.8s"><span data-i18n="sheet.l2">Қоғамдық-саяси мұра</span></li>
+                        <li style="--d:2s"><span data-i18n="sheet.l3">Мұрағат құжаттары</span></li>
+                        <li style="--d:2.2s"><span data-i18n="sheet.l4">Жүйелеу және визуализациялау</span></li>
                     </ul>
                 </div>
             </div>
 
             <!-- Навигация -->
-            <nav class="main-nav" aria-label="Негізгі мәзір">
+            <nav class="main-nav" aria-label="Негізгі мәзір" data-i18n-label="nav.label">
                 <ul>
-                    <li><a href="index.html" class="active" aria-current="page">Кіріспе</a></li>
-                    <li><a href="biography.html">І. Өмірбаян мен Хронология</a></li>
-                    <li><a href="mindmap.html">ІІ. Алашпен байланыс</a></li>
-                    <li><a href="research.html">ІІІ. Тәжірибелік бөлім (ЖИ)</a></li>
+                    <li><a href="index.html" class="active" aria-current="page" data-i18n="nav.home">Кіріспе</a></li>
+                    <li><a href="biography.html" data-i18n="nav.bio">І. Өмірбаян мен Хронология</a></li>
+                    <li><a href="mindmap.html" data-i18n="nav.map">ІІ. Алашпен байланыс</a></li>
+                    <li><a href="research.html" data-i18n="nav.research">ІІІ. Тәжірибелік бөлім (ЖИ)</a></li>
                 </ul>
             </nav>
 
@@ -65,29 +66,29 @@
         <!-- Өзектілік пен мақсат -->
         <section class="split intro" aria-labelledby="intro-title">
             <div class="split-head">
-                <h2 id="intro-title">Жобаның өзектілігі мен мақсаты</h2>
+                <h2 id="intro-title" data-i18n="intro.title">Жобаның өзектілігі мен мақсаты</h2>
                 <div class="ornament-divider" aria-hidden="true">
                     <span class="line"></span><span class="divider-dot">◆</span><span class="line"></span>
                 </div>
             </div>
 
             <div class="intro-body">
-                <p class="lead">Ораз Қиқымұлы Жандосов туралы тарихи деректі, көркем фильмнің жоқтығы, ғаламтордағы бейнематериалдардағы қаралымның аздығы және тұлғаның тарихи маңызының заманауи құралдармен визуализацияланбауы осы жобаға негіз болды.</p>
+                <p class="lead" data-i18n="intro.lead">Ораз Қиқымұлы Жандосов туралы тарихи деректі, көркем фильмнің жоқтығы, ғаламтордағы бейнематериалдардағы қаралымның аздығы және тұлғаның тарихи маңызының заманауи құралдармен визуализацияланбауы осы жобаға негіз болды.</p>
 
-                <p>Біз ҚР Президенті мұрағатынан алынған <strong>«Құпия» белгісі енді ғана алынған тың деректерге</strong> сүйене отырып, тұлға мұрасын жасанды интеллект көмегімен жүйелеудің алғашқы үлгісін жасадық.</p>
+                <p data-i18n-html="intro.p2">Біз ҚР Президенті мұрағатынан алынған <strong>«Құпия» белгісі енді ғана алынған тың деректерге</strong> сүйене отырып, тұлға мұрасын жасанды интеллект көмегімен жүйелеудің алғашқы үлгісін жасадық.</p>
 
                 <aside class="clipping" aria-labelledby="press-title">
-                    <h3 id="press-title">БАҚ-та жариялануы</h3>
-                    <p>Жоба нәтижелері кеңінен жарық көрді:</p>
+                    <h3 id="press-title" data-i18n="press.title">БАҚ-та жариялануы</h3>
+                    <p data-i18n="press.lead">Жоба нәтижелері кеңінен жарық көрді:</p>
                     <ul>
-                        <li>«Егемен Қазақстан» газеті</li>
-                        <li>«Астана Ақшамы» газеті</li>
-                        <li>Астана қаласы әкимиятінің ресми сайттары</li>
-                        <li>Әлеуметтік желілер</li>
+                        <li data-i18n="press.l1">«Егемен Қазақстан» газеті</li>
+                        <li data-i18n="press.l2">«Астана Ақшамы» газеті</li>
+                        <li data-i18n="press.l3">Астана қаласы әкимиятінің ресми сайттары</li>
+                        <li data-i18n="press.l4">Әлеуметтік желілер</li>
                     </ul>
                     <blockquote>
-                        «Алаш рухы — жаңа ұрпақпен жаңғырып келеді»
-                        <cite>мақаласы</cite>
+                        <span data-i18n="press.quote">«Алаш рухы — жаңа ұрпақпен жаңғырып келеді»</span>
+                        <cite data-i18n="press.cite">мақаласы</cite>
                     </blockquote>
                 </aside>
             </div>
@@ -96,7 +97,7 @@
         <!-- Жоба паспорты -->
         <section class="split passport" aria-labelledby="passport-title">
             <div class="split-head">
-                <h2 id="passport-title">Жоба паспорты</h2>
+                <h2 id="passport-title" data-i18n="pass.title">Жоба паспорты</h2>
                 <div class="ornament-divider" aria-hidden="true">
                     <span class="line"></span><span class="divider-dot">◆</span><span class="line"></span>
                 </div>
@@ -104,34 +105,34 @@
 
             <dl class="credits">
                 <div>
-                    <dt>Жоба авторлары</dt>
+                    <dt data-i18n="authors.label">Жоба авторлары</dt>
                     <dd>
-                        <span>Сенғазы Жансері Қасымханұлы</span>
-                        <span>Ертай Естай Нұржанұлы</span>
-                        <small>10 сынып</small>
+                        <span data-i18n="authors.n1">Сенғазы Жансері Қасымханұлы</span>
+                        <span data-i18n="authors.n2">Ертай Естай Нұржанұлы</span>
+                        <small data-i18n="authors.grade">10 сынып</small>
                     </dd>
                 </div>
                 <div>
-                    <dt>Мектеп</dt>
-                    <dd><span>«№73 мектеп-лицей» ШЖҚ МКК, Астана қаласы</span></dd>
+                    <dt data-i18n="school.label">Мектеп</dt>
+                    <dd><span data-i18n="school.name">«№73 мектеп-лицей» ШЖҚ МКК, Астана қаласы</span></dd>
                 </div>
                 <div>
-                    <dt>Жоба жетекшісі</dt>
+                    <dt data-i18n="sup.label">Жоба жетекшісі</dt>
                     <dd>
-                        <span>Жомартқызы Гаури Ботакановна</span>
-                        <small>педагог-зерттеуші</small>
+                        <span data-i18n="sup.name">Жомартқызы Гаури Ботакановна</span>
+                        <small data-i18n="sup.role">педагог-зерттеуші</small>
                     </dd>
                 </div>
                 <div>
-                    <dt>Ғылыми жетекші</dt>
+                    <dt data-i18n="sci.label">Ғылыми жетекші</dt>
                     <dd>
-                        <span>Дүкенбаева Задаш Оразғалықызы</span>
-                        <small>т.ғ.д., профессор, Л.Н. Гумилев атындағы ЕҰУ</small>
+                        <span data-i18n="sci.name">Дүкенбаева Задаш Оразғалықызы</span>
+                        <small data-i18n="sci.role">т.ғ.д., профессор, Л.Н. Гумилев атындағы ЕҰУ</small>
                     </dd>
                 </div>
                 <div>
-                    <dt>Бағыты</dt>
-                    <dd><span>Тарих</span></dd>
+                    <dt data-i18n="field.label">Бағыты</dt>
+                    <dd><span data-i18n="field.value">Тарих</span></dd>
                 </div>
             </dl>
         </section>
@@ -139,7 +140,7 @@
         <!-- Жоба бөлімдері -->
         <section class="split parts" aria-labelledby="parts-title">
             <div class="split-head">
-                <h2 id="parts-title">Жоба бөлімдері</h2>
+                <h2 id="parts-title" data-i18n="parts.title">Жоба бөлімдері</h2>
                 <div class="ornament-divider" aria-hidden="true">
                     <span class="line"></span><span class="divider-dot">◆</span><span class="line"></span>
                 </div>
@@ -148,23 +149,23 @@
             <ol class="parts-list">
                 <li>
                     <a href="biography.html">
-                        <span class="num">І</span>
-                        <span class="part-title">Өмірбаян мен Хронология</span>
-                        <span class="part-desc">Өмір жолы мен негізгі оқиғалар</span>
+                        <span class="num" data-i18n="p1.num">І</span>
+                        <span class="part-title" data-i18n="p1.title">Өмірбаян мен Хронология</span>
+                        <span class="part-desc" data-i18n="p1.desc">Өмір жолы мен негізгі оқиғалар</span>
                     </a>
                 </li>
                 <li>
                     <a href="mindmap.html">
-                        <span class="num">ІІ</span>
-                        <span class="part-title">Алашпен байланыс</span>
-                        <span class="part-desc">Тұлға мен Алаш арасындағы байланыс картасы</span>
+                        <span class="num" data-i18n="p2.num">ІІ</span>
+                        <span class="part-title" data-i18n="p2.title">Алашпен байланыс</span>
+                        <span class="part-desc" data-i18n="p2.desc">Тұлға мен Алаш арасындағы байланыс картасы</span>
                     </a>
                 </li>
                 <li>
                     <a href="research.html">
-                        <span class="num">ІІІ</span>
-                        <span class="part-title">Тәжірибелік бөлім (ЖИ)</span>
-                        <span class="part-desc">Жасанды интеллектпен жүйелеу және визуализациялау</span>
+                        <span class="num" data-i18n="p3.num">ІІІ</span>
+                        <span class="part-title" data-i18n="p3.title">Тәжірибелік бөлім (ЖИ)</span>
+                        <span class="part-desc" data-i18n="p3.desc">Жасанды интеллектпен жүйелеу және визуализациялау</span>
                     </a>
                 </li>
             </ol>
@@ -174,7 +175,7 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>© 2026 Ғылыми-зерттеу жобасы. «№73 мектеп-лицей», Астана қаласы.</p>
+            <p data-i18n="footer">© 2026 Ғылыми-зерттеу жобасы. «№73 мектеп-лицей», Астана қаласы.</p>
         </div>
     </footer>
 
